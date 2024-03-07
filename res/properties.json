@@ -1,0 +1,9 @@
+{
+    "background": [640, 640],
+    "background1": [640, 640],
+    "background2": [640, 640],
+    "hole": [64, 64],
+    "hole2": [64, 64],
+    "marble": [64, 64],
+    "marble2": [64, 64]
+}
