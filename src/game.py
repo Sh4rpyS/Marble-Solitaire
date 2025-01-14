@@ -1,7 +1,4 @@
 import pygame, sys, win32gui, win32con
-from pygame.locals import *
-
-pygame.init()
 
 import sprite, gui
 import scene_game, scene_end, scene_menu
@@ -53,7 +50,7 @@ def Input() -> None:
     mx, my = pygame.mouse.get_pos()
 
     for event in pygame.event.get():
-        if event.type == QUIT: Stop()
+        if event.type == pygame.QUIT: Stop()
 
         # Scene specific input
         if Screen.scene == "menu":
@@ -64,17 +61,19 @@ def Input() -> None:
             scene_end.Input(event)
 
         # Scene switching
-        if event.type == KEYDOWN:
-            if event.key == K_1:
+        """
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_1:
                 scene_menu.Start()
                 Screen.scene = "menu"
-            if event.key == K_2:
+            if event.key == pygame.K_2:
                 scene_game.Start()
                 Screen.scene = "game"
-            if event.key == K_3:
+            if event.key == pygame.K_3:
                 scene_end.End_Game(0)
-            if event.key == K_4:
+            if event.key == pygame.K_4:
                 scene_end.End_Game(1)
+        """
         
 
 

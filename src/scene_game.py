@@ -1,6 +1,4 @@
-import sys, pygame
-from pygame.locals import *
-pygame.init()
+import pygame
 
 import game, gui
 import objects
@@ -46,7 +44,7 @@ def Start():
 def Input(event):
     global timer_running, timer, timer_thread
 
-    if event.type == MOUSEBUTTONDOWN:
+    if event.type == pygame.MOUSEBUTTONDOWN:
         objects.Marble.Select_Marble()          # Checks if you select a marble
 
         if gui.Button.Buttons["start_button"].button_object.collidepoint((game.mx, game.my)) and gui.Button.Buttons["start_button"].active:
@@ -64,8 +62,8 @@ def Input(event):
 
             game.Screen.scene = "menu"
 
-    if event.type == KEYDOWN:
-        if event.key == K_r:
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_r:
             if objects.Marble.Selected != None: objects.Marble.Selected.remove()
 
 def Update():

@@ -1,6 +1,7 @@
-import game
+import game, pygame
 
 def main() -> None:
+    pygame.init()
     game.Init()
     game.Start()
 

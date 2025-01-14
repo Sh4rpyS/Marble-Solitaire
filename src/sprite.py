@@ -1,7 +1,4 @@
-import pygame, os, json, sys
-from pygame.locals import *
-
-pygame.init()
+import pygame, os, json
 
 class Sprite_Manager:
     Sprites = {}

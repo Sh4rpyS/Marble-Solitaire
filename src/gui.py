@@ -1,9 +1,6 @@
-import pygame, sys
-from pygame.locals import *
+import pygame
 
 import game
-
-pygame.init()
 
 class Text:
     Texts = {}

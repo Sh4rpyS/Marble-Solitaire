@@ -1,13 +1,13 @@
 Required:
-- Python (3.10.5 or newer)
+- Python (3.13.1 or newer)
 
 Download: https://www.python.org/downloads/
 
 ---------------------------------------------------------------------------------------
 
 Required Python Modules
-- Pywin32
-- Pygame (2.0.2 or newer)
+- Pywin32 (308 or newer)
+- Pygame-ce (2.5.2 or newer)
 
 ---------------------------------------------------------------------------------------
 
@@ -38,3 +38,8 @@ Version 1.01
 Version 1.02
 - Disabled ability to switch scenes with numbers
 - Improved readme.txt
+
+Version 1.03
+- Disabled ability to switch scenes with numbers (again)
+- Upgraded to pygame-ce
+- Updated readme.txt

@@ -1,7 +1,4 @@
-import pygame, sys
-from pygame.locals import *
-
-pygame.init()
+import pygame
 
 import scene_game
 import game, gui
@@ -29,7 +26,7 @@ def Start(state):
         gui.Text.Texts["loss_text"].set_active(False)
 
 def Input(event):
-    if event.type == MOUSEBUTTONDOWN:
+    if event.type == pygame.MOUSEBUTTONDOWN:
         if gui.Button.Buttons["play_again_button"].button_object.collidepoint((game.mx, game.my)):
             game.scene_game.Start()
             game.Screen.scene = "game"
