@@ -14,7 +14,7 @@ Required Python Modules
 To play the game, make sure you have installed the required files.
 Open "Marble Solitaire.bat" to run the game.
 
-Newest version: Version 1.02
+Newest version: Version 1.03
 Made by Veeti Tuomola
 
 ---------------------------------------------------------------------------------------
