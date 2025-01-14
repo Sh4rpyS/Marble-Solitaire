@@ -9,8 +9,6 @@ Required Python Modules
 - Pywin32
 - Pygame (2.0.2 or newer)
 
-Download: Run the "INSTALL MODULES.bat" when you have already installed python
-
 ---------------------------------------------------------------------------------------
 
 To play the game, make sure you have installed the required files.
